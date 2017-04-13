@@ -6,14 +6,16 @@
    <%= link_to new_cocktail_path(@cocktail) do %>
       ADD A NEW COCKTAIL!</i></h1>
     <%end%>
+    <hr>
 <br>
 <br>
 
-  <%@cocktails.each do |cocktail| %>
-  <p><%= cocktail.name %></p>
-  <hr>
-<%end%>
-<br>
-<br>
+
+  <% @cocktails.each do |cocktail| %>
+  <p> <%= link_to cocktail.name, cocktail_path(cocktail) %></p><hr>
+  <%end%>
+
+
+
 </div>
 
