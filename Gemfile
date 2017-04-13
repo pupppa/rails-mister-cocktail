@@ -5,11 +5,15 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Debug binding.pry
+gem 'pry'
+
 # Le Wagon StyleSheets
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+
 
 # Ruby gemfile
 ruby '2.3.3'
