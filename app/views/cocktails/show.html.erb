@@ -1,34 +1,4 @@
 
-<div class="col-sm-8 col-sm-offset-2">
-<!-- <br>
-<br><br>
-
-
-
-    <h1><%= @cocktail.name %></h1>
-
-    <%= cl_image_tag @cocktail.photo, height: 300, width: 200, crop: :fill %>
-
-<br><br>
-
-    <%= link_to cocktail_path(@cocktail),
-      method: :delete,
-      data: { confirm: "Are you sure?" } do %>
-      <i class="fa fa-trash-o"></i>
-    <%end%>
-
-    <%= link_to edit_cocktail_path(@cocktail) do %>
-      <i class="fa fa-pencil"></i></h1>
-    <%end%>
-
-
-  <hr>
-
-
-
-
-....
- -->
 
 <div class="media">
   <div class="media-body">
@@ -60,6 +30,13 @@
       </div></h2>
     </div>
     <div class="media-section">
+
+
+
+
+
+
+
       <h2>    <%= link_to cocktail_path(@cocktail),
       method: :delete,
       data: { confirm: "Are you sure?" } do %>

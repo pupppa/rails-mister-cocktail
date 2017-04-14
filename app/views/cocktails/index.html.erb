@@ -1,17 +1,27 @@
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,20,0.3) 50%), url('http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/1/13/1/Original_Shower-Brunch-Bryan-Patrick-Flynn-Drinks_s3x4.jpg.rend.hgtvcom.1280.1707.jpeg');">
+  <div class="banner-content">
+
+    <h1>IDRINK</h1>
+    <p>Find the best cocktails for your party!</p>
+    <a class="btn btn-primary btn-lg">GET IT</a>
+
+  </div>
+</div>
+
+
+
 <div class="col-sm-8 col-sm-offset-2">
 <br>
-<br>
-<h3>All Cocktails</h3>
+
 <br>
    <%= link_to new_cocktail_path(@cocktail) do %>
       ADD A NEW COCKTAIL!</i></h1>
     <%end%>
     <hr>
 <br>
-<%= cl_image_tag("lpo57gmsoy7hqqxoh2ba",
-      width: 400, height: 300, crop: :fill) %>
 
-<br>
 
 
   <% @cocktails.each do |cocktail| %>
@@ -24,7 +34,7 @@
 <!--
     :width => 100, :height => 150, :crop => :fill -->
 
-    <%= cl_image_tag(cocktail.photo.full_public_id, width: 90, height: 130, crop: :fill, class: "product-image hidden-xs") %>
+    <%= cl_image_tag(cocktail.photo.full_public_id, width: 80, height: 100, crop: :fill, class: "product-image hidden-xs") %>
 
     <div class='product-body'>
 
