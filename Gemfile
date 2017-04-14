@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Carrier
+gem 'carrierwave', '~> 0.11.2'
+
 # Figaro
 gem 'figaro'
 
@@ -20,6 +23,9 @@ gem 'autoprefixer-rails'
 
 # Ruby gemfile
 ruby '2.3.3'
+
+# Cloudinary
+gem 'cloudinary'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

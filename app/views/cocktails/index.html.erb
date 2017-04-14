@@ -8,14 +8,37 @@
     <%end%>
     <hr>
 <br>
+<%= cl_image_tag("lpo57gmsoy7hqqxoh2ba",
+      width: 400, height: 300, crop: :fill) %>
+
 <br>
 
 
   <% @cocktails.each do |cocktail| %>
-  <p> <%= link_to cocktail.name, cocktail_path(cocktail) %></p><hr>
-  <%end%>
+  <div class="product">
+    <div class='product-upvote'>
+      <div class="product-arrow"></div><!--
+      <div class='product-count'>95</div> -->
+    </div><!--
+    <img src="kudoz.jpg" alt="kudoz" class="product-image hidden-xs"> -->
+<!--
+    :width => 100, :height => 150, :crop => :fill -->
 
+    <%= cl_image_tag(cocktail.photo.full_public_id, width: 90, height: 130, crop: :fill, class: "product-image hidden-xs") %>
 
+    <div class='product-body'>
+
+      <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+
+      <p>Les meilleures offres d'emploi cadre sur mobile</p>
+    </div>
+    <ul class="list-inline product-controls hidden-sm hidden-xs">
+      <li><a href=""><i class="fa fa-heart"></i></a></li>
+      <li><a href=""><i class="fa fa-share"></i></a></li>
+      <li><a href=""><i class="fa fa-star"></i></a></li>
+    </ul>
+  </div>
+<%end%>
 
 </div>
 
